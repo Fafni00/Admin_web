@@ -2,7 +2,7 @@ import 'package:adimn_web/Category/SubCategoryPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 
-import '../Services/sidebar.dart';
+import '../sidebar.dart';
 import 'CategoryPage.dart';
 
 class SubCategory extends StatelessWidget {

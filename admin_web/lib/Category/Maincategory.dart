@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 
-import '../Services/sidebar.dart';
+import '../sidebar.dart';
 import 'MaincategoryPage.dart';
 
 class MainCategory extends StatelessWidget {

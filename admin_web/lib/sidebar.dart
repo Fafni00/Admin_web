@@ -3,9 +3,9 @@ import 'package:adimn_web/Category/SubCategory.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 
-import '../Homepage/Category.dart';
-import '../Homepage/Homepage.dart';
-import '../Seller/SellerList.dart';
+import 'Homepage/Category.dart';
+import 'Homepage/Homepage.dart';
+import 'Seller/SellerList.dart';
 
 class SideBarWidget {
   sidebarMenus(context, selectedRoute) {

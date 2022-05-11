@@ -1,6 +1,6 @@
 import 'package:adimn_web/Homepage/Category.dart';
 import 'package:adimn_web/Seller/SellerList.dart';
-import 'package:adimn_web/Services/sidebar.dart';
+import 'package:adimn_web/sidebar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                           height: 150,
                           width: 150,
                           child: Image.asset(
-                            'images/assets/logo.png',
+                            'images/assets/admincategories.png',
                             fit: BoxFit.contain,
                           ),
                         )),
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                           height: 150,
                           width: 150,
                           child: Image.asset(
-                            'images/assets/logo.png',
+                            'images/assets/sellerlist.png',
                             fit: BoxFit.contain,
                           ),
                         ),
