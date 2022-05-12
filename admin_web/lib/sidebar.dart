@@ -1,5 +1,7 @@
 import 'package:adimn_web/Category/Maincategory.dart';
 import 'package:adimn_web/Category/SubCategory.dart';
+import 'package:adimn_web/LoginPage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 
@@ -57,19 +59,35 @@ class SideBarWidget {
           ),
         ),
       ),
-      footer: Container(
-        height: 50,
-        width: double.infinity,
-        color: Color(0xff008000),
-        child: const Center(
-          child: Text(
-            'SIGNOUT',
-            style: TextStyle(
-              color: Colors.white,
+      footer: InkWell(
+        onTap: () {
+          _signOut(context);
+        },
+        child: Container(
+          height: 50,
+          width: double.infinity,
+          color: Color(0xff008000),
+          child: const Center(
+            child: Text(
+              'SIGNOUT',
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ),
       ),
     );
+  }
+
+  _signOut(BuildContext context) async {
+    await FirebaseAuth.instance.signOut().then(
+          (value) => Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Loginpage(),
+            ),
+          ),
+        );
   }
 }
